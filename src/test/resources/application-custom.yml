@@ -1,0 +1,51 @@
+tmsgen:
+  orbitInputTimesheetPath: D:\TMS\In
+  orbitProcessedTimesheetPath: D:\TMS\Processed
+  orbitErrorTimesheetPath: D:\TMS\Error
+  tmsTimesheetPath: D:\TMS\out
+  timeSheetPeriod: 10:2020
+  tmsProjectName:
+    Default: eMeter - Custom Engineering_CUSTOM ENGINEERING FY 2019-20
+
+  nameToGID:
+    Aggarwal-Ashish: Z003JWDP
+    Bilasi-Deepak: Z003KPFW
+    Chandravanshi-Vineet: Z0034YAH
+    Goyal-Rupin: Z0042K0P
+    Khandelwal-Tathagat: Z003ENDZ
+    Kumar-Neeraj: Z003DT8E
+    Mehta-Ashish: Z00427HY
+    PACHORI-RUPESH: Z0045DNE
+    Pawar-Hitesh: Z0034YDD
+    Raza-Masoom: Z0037FSX
+    Singh-Ravi: Z0038B4F
+    Singh-Swapnil: Z0042K0S
+    Srivastava-Amit: Z0034Y9X
+    Thomas-Kenneth: Z1234ABC
+    Verma-Neha: Z003R7FE
+    Verma-Sony: Z0044WJA
+
+
+  orbitProjToLocationIndicator:
+    commonLocationIndicator:
+      Default: Offshore
+
+
+  orbitTaskToTmsAct:
+    commonTaskName:
+      Default: CODE-DEVELOP - Billable
+    Administrative:
+      Default: CODE-TRAINING - NonBillable
+      Flexitime: COM-LEAVE - NonBillable
+      Training: CODE-TRAINING - NonBillable
+      Vacation-Or-Sick-Time: COM-LEAVE - NonBillable
+      Vacation-or-Sick-Time: COM-LEAVE - NonBillable
+      Vacation: COM-LEAVE - NonBillable
+
+logging:
+  file: C:\Temp\tmsgenApp.log
+  level:
+    com:
+      emeter:
+        eip:
+          tmsgenerator: DEBUG

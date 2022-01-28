@@ -1,0 +1,67 @@
+tmsgen:
+  orbitInputTimesheetPath: D:\TMS\In
+  orbitProcessedTimesheetPath: D:\TMS\Processed
+  orbitErrorTimesheetPath: D:\TMS\Error
+  tmsTimesheetPath: D:\TMS\out
+  timeSheetPeriod: 08:2020
+  tmsProjectName:
+    "[I-GA-20170901_APAC PS Internal_Execution]": "PRODUCT_IMPLEMENTATION_I&S_D_FY21_MDM"
+    I-U35000_DG_SW_MDM_Small_Offers: "PRODUCT_IMPLEMENTATION_I&S_D_FY21_MDM"
+    "[I-GA-2020-I&S_DEOP_Internal-Execution]": "PRODUCT_IMPLEMENTATION_I&S_D_FY21_DEOP"
+    N-020562_DigitalX_DEWA_MDM_Service_Contract: "I&S_Delivery_I&S_D_FY21_DEWA"
+    P-GA-3313561597-Elektrilevi_Estonia_Execution: "I&S_Delivery_I&S_D_FY21_ELV_INT"
+    30_GA_Kahramaa_Execution: "I&S_Delivery_I&S_D_FY21_Kahramaa"
+    "[30469554_Siemens_Australia _AusNet_Hourly_Rate_T&M]": "I&S_Delivery_I&S_D_FY21_Ausnet"
+    P-GA-20170901_TNB-Malaysia-EnergyIP_Execution: "I&S_Delivery_TNB_Malaysia_FY21"
+    Leaves: Administrative
+    Default: emeter-IMPl fy20-21
+
+
+  nameToGID:
+    Soy-Kushal: Z003AD2K
+    Ahmad-Faisal: Z0034YBU
+    Debnath-Rupanjana: Z003k6TJ
+    Manuj-Bhatnagar: Z003K6TC
+    Kishore-Prateek: Z0038B4M
+    Kushal-Soy: Z003AD2K
+    Namrata-Singh: Z0042WBB
+    Sharma-Ekta: Z00456CU
+    Mathur-Saksham: Z0038B4K
+    Basit-Gufran: Z0044DAF
+    Gupta-Sourabh: Z003R7JP
+    Shalu-Chauhan: Z0034YCF
+    Shruti-Manocha: Z003HZ3H
+    Prashant-K.Lodhi: Z003P4BB
+    Ragini-Mahara: Z003D9RW
+    Chandrima-Ghosh: Z003YN0X
+    Komal-Basraon: Z0040VND
+    Sumit-Bhatnagar: Z003Y3KB
+    Sanket-K.Jha: Z0046ZXF
+    Rishabh-Tayal: Z003V57D
+    Garima-Agarwal: Z003BH8P
+    Kirti-Bhatia: Z003V57D
+
+  orbitProjToLocationIndicator:
+    commonLocationIndicator:
+      Default: Offshore
+
+
+  orbitTaskToTmsAct:
+    commonTaskName:
+      Default: IMPL-ACTIVITIES - Billable
+    Leaves:
+      Administrative: COM-LEAVE - NonBillable
+    Administrative:
+      Default: CODE-TRAINING - NonBillable
+      Flexitime: COM-LEAVE - NonBillable
+      Training: CODE-TRAINING - NonBillable
+      Vacation-Or-Sick-Time: COM-LEAVE - NonBillable
+      Vacation-or-Sick-Time: COM-LEAVE - NonBillable
+      Vacation: COM-LEAVE - NonBillable
+logging:
+  file: D:\TMS\logs\tmsgenApp.log
+  level:
+    com:
+      emeter:
+        eip:
+          tmsgenerator: INFO

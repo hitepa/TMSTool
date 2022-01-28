@@ -1,0 +1,60 @@
+tmsgen:
+  orbitInputTimesheetPath: C:\D\TMS\In
+  orbitProcessedTimesheetPath: C:\D\TMS\Processed
+  orbitErrorTimesheetPath: C:\D\TMS\Error
+  tmsTimesheetPath: C:\D\TMS\out
+  timeSheetPeriod: 12:2021
+  tmsProjectName:
+    "[I_GA_2021_I&S_APAC_Internal_Execution]": "DG_SW&CS_Internal_Projects_I&S_D_FY22_MDM"
+    "[30_GA_AEMO_PH_Adapter]": "DG_SW&CS_Internal_Projects_AEMO ADAPTER FOR DEOP"
+    "[30-GA-3313830406-Elektrilevi-Amendment4_Execution]": "I&S_Delivery_IEB_FY22_ELV"
+    "[30-GA-3313830406-Elektrilevi-Amendment4_NewWork_Execution]": "I&S_Delivery_IEB_FY22_ELV"
+    "[N-020562_DigitalX_DEWA_MDM_Service_Contract]": "I&S_Delivery_IEB_FY22_DEWA"
+    "[30_GA_Barcelona_Energia_Execution]": "I&S_Delivery_IEB_FY22_DEOP_Barcelona&Naturgy"
+    "[30_GA_ONEE_Morocco]": "I&S_Delivery_IEB_FY22_ONEE"
+    "[30513647_RC-US_DEOP_PJM_Interface]": "I&S_Delivery_IEB_FY22_PJM_Princeton"
+    "[30526471_RC-CA_DEOP_BCIT]": "I&S_Delivery_IEB_FY22_BCIT_SE"
+    "[P-GA-20170901_TNB-Malaysia-EnergyIP_Execution]": "I&S_Delivery_TNB_Malaysia_Nov_FY21"
+    Leaves: Administrative
+    Default: "DG_SW&CS_Internal_Projects_I&S_D_FY22_MDM"
+  nameToGID:
+    Soy-Kushal: Z003AD2K
+    Ahmad-Faisal: Z0034YBU
+    Debnath-Rupanjana: Z003k6TJ
+    Bhatnagar-Manuj: Z003K6TC
+    Kishore-Prateek: Z0038B4M
+    Singh-Namrata: Z0042WBB
+    Sharma-Ekta: Z00456CU
+    Singhal-Vidit: Z004E2VP
+    Basit-Gufran: Z0044DAF
+    Singh-Ankit: Z004EFDF
+    Chauhan-Shalu: Z0034YCF
+    Manocha-Shruti: Z003HZ3H
+    Lodhi-Prashant: Z003P4BB
+    Kushwah-Anurag: Z004F9DP
+
+
+  orbitProjToLocationIndicator:
+    commonLocationIndicator:
+      Default: Offshore
+
+
+  orbitTaskToTmsAct:
+    commonTaskName:
+      Default: IMPL-ACTIVITIES - Billable Work
+    Leaves:
+      Administrative: COM-LEAVE - NonBillable
+    Administrative:
+      Default: CODE-TRAINING - NonBillable
+      Flexitime: COM-LEAVE - NonBillable
+      Training: IMPL-ACTIVITIES - Billable
+      Vacation-Or-Sick-Time: COM-LEAVE - NonBillable
+      Vacation-or-Sick-Time: COM-LEAVE - NonBillable
+      Vacation: COM-LEAVE - NonBillable
+logging:
+  file: C:\D\TMS\logs\tmsgenApp.log
+  level:
+    com:
+      emeter:
+        eip:
+          tmsgenerator: DEBUG
